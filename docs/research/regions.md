@@ -1,6 +1,16 @@
-# Regions (proposed)
+# Regions
 
-Click targets on the 3D model. Not ETK parts. First Check Sequence uses **front-left door**.
+Accepted list. v1 selects these with a Query, not a 3D click. Not ETK parts. First Check Sequence uses **front-left door**.
+
+## Aliases (v1)
+
+| Owner types (examples) | Lands on |
+| --- | --- |
+| back left window, rear left window, rear-left glass | Rear-left glass, Rear-left door |
+| front left window, driver’s window | Front-left glass, Front-left door |
+| interior trunk left lightbulb, trunk lamp, cargo light | Trunk interior |
+| oil, engine oil, oil filter | Engine bay (System engine-oil) |
+| cluster, service light, iDrive (wrong car) | Instrument cluster |
 
 ## Exterior
 

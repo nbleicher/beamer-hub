@@ -61,8 +61,12 @@ What the Owner notices (window dead, lamp out, leak, noise). Not a failed part.
 _Avoid_: Issue, problem, diagnosis
 
 **Region**:
-A named place on the Vehicle the Owner can select on the 3D model (front-left door, trunk, engine bay). Not an ETK part number.
-_Avoid_: Part, mesh, component
+A named place on the Vehicle the Owner can select (front-left door, trunk interior, engine bay). Not an ETK part number.
+_Avoid_: Part, mesh, component, 3D click target
+
+**Query**:
+The text the Owner types to find a Region (and its aliases), such as “back left window” or “interior trunk left lightbulb.”
+_Avoid_: Search (as the domain object), Google, part lookup
 
 **Check Sequence**:
 An ordered list of least-invasive Owner-doable checks for a Symptom or Region. Completing the sequence is not a finding that a part has failed.
