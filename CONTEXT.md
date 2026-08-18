@@ -9,7 +9,7 @@ The single person this tool exists for.
 _Avoid_: User, customer, account, household
 
 **Vehicle**:
-The 2003 BMW 325i sedan identified by VIN `WBAET374X3NJ32467` (E46 chassis, US-spec, silver, 2.5L I6, rear-wheel drive, built in Pretoria).
+The 2003 BMW 325i sedan identified by VIN `WBAET374X3NJ32467` (E46 chassis, US-spec, silver, M54 2.5L I6, rear-wheel drive, Pretoria, manufactured 03.2003).
 _Avoid_: Beamer (as a type), car, BMW (as if more than one vehicle were in scope)
 
 **Service Interval Display**:

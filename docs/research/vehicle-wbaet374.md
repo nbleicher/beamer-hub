@@ -19,9 +19,13 @@ Decoded clean; check digit valid.
 
 Source: [NHTSA vPIC DecodeVinValues](https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/WBAET374X3NJ32467?format=json).
 
-US-spec 325i 184 hp is the M54B25 rating. A SULEV M56 existed on some 2003 325i automatics in some states; that is **not** confirmed for this VIN from vPIC. Confirm on the emissions label / valve cover before treating VANOS, CCV, or intake parts as M54-only.
+US-spec 325i 184 hp is the M54B25 rating. A SULEV M56 existed on some 2003 325i automatics in some states.
 
-Chassis in BMW parts language: **E46** sedan. RealOEM serial (last 7 of VIN): `J32467`.
+Unofficial ETK mirror [etkbmw.cc for this VIN](https://etkbmw.cc/en/bmw/auto/WBAET374X3NJ32467) (page states it is **not affiliated with BMW AG**) decodes the same VIN as: **325i M54**, **3' E46 Saloon USA**, manufacture **03.2003**, steering **L**. It also shows **Gearbox: N**. NHTSA trim is **SA** (Steptronic automatic) and CARFAX listed automatic; treat gearbox as automatic until a dealer ETK print contradicts it. The M54 line plus 184 hp is enough to treat VANOS/CCV/intake as M54, not M56, unless the under-hood emissions label says SULEV.
+
+Chassis in BMW parts language: **E46** sedan. RealOEM / ETK serial (last 7 of VIN): `J32467`. Production month matters for ETK “from / up to” rows.
+
+etkbmw.cc is the same class of site as RealOEM: unofficial ETK in a browser, no public API, not a Catalog we scrape. Use it by hand; store a diagram URL as a Citation.
 
 ## What this Vehicle does not have
 

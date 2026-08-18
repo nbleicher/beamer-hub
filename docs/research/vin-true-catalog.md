@@ -28,7 +28,7 @@ Their own `robots.txt` (fetched 2026-08-18) allows ordinary **search** indexing,
 
 A script that walks every E46 diagram for `J32467` is the traffic they are blocking. The catalog content is BMW ETK data on someone else’s ad-supported site. BMW NA’s own terms also forbid robots on BMW NA sites; that is a different host, same industry rule: no unofficial bulk harvest.
 
-A **link** to a RealOEM diagram you already have open is a Citation. A **scraper** that fills our Catalog overnight is not “using RealOEM.” It is copying their site. We will not build that. The dealer ETK print for this VIN is the legitimate bulk path.
+A **link** to a RealOEM or [etkbmw.cc VIN page](https://etkbmw.cc/en/bmw/auto/WBAET374X3NJ32467) diagram you already have open is a Citation. Those hosts say they are **not BMW**. A **scraper** that fills our Catalog overnight is copying their site. We will not build that. The dealer ETK print for this VIN is the legitimate bulk path.
 
 ## Q26 in that light
 
