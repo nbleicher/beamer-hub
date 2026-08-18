@@ -27,6 +27,8 @@ Low annual miles the whole life (~6k/yr). Time-based services (brake fluid, cool
 
 - **2017-09-06** — rear-end collision, CARFAX “minor,” damage to **rear and right rear**, airbags did not deploy. No mileage on the line. No collision-repair shop appears afterward.
 
+Promoted as unverified Visits/Records in [unverified-ledger.md](./unverified-ledger.md).
+
 ## Mechanical lines worth promoting (if the Owner agrees)
 
 Registration renewals omitted. “Vehicle serviced” with no operations omitted.

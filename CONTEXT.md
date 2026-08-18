@@ -69,7 +69,7 @@ An ordered list of least-invasive Owner-doable checks for a Symptom or Region. C
 _Avoid_: Diagnosis, procedure, repair, TIS job, ISTA test plan
 
 **Check Step**:
-One step in a Check Sequence: what to try, required Tools and Capabilities, whether it is dangerous, and a stop if the Crib says the Owner does not have what the step needs. May carry Citations. A YouTube search for the step returns Suggestions, not Citations.
+One step in a Check Sequence: what to try, required Tools and Capabilities, whether it is dangerous, and a stop if the Crib says the Owner does not have what the step needs. May carry Citations. A YouTube search button on the step returns Suggestions, not Citations.
 _Avoid_: Job, task, TIS step
 
 **Citation**:
