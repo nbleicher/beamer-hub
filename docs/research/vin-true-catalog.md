@@ -14,11 +14,21 @@ Parts also **supersede**. The number on a 2003 invoice may now be a successor. E
 | AI names a part | No | Yes |
 | Owner pastes a number they copied from RealOEM/dealer for this VIN | One line at a time | Low if they used `J32467` |
 | Dealer prints/exports ETK for `WBAET374X3NJ32467` | Yes, if they give you the list | No |
-| Scrape RealOEM / BMW NA | Complete-ish | Against BMW NA terms; we will not |
+| Scrape RealOEM / BMW NA | Complete-ish | We will not. See below. |
 
 There is no public BMW “give me all parts for this VIN” API. AOS Parts Information is still “coming soon” / data files for **qualified** shops.
 
 **You cannot guarantee zero wrong parts** unless the Catalog is ETK-for-this-VIN. Grow-as-you-go with pasted numbers is honest and incomplete. An LLM “complete catalog” is complete fiction.
+
+## Why RealOEM is by hand
+
+RealOEM has **no public API**. It is a website that shows ETK-style diagrams after you type the last seven of a VIN. “By hand” means: you open it in a browser, like any other person, and paste a number into our Catalog.
+
+Their own `robots.txt` (fetched 2026-08-18) allows ordinary **search** indexing, sets `ai-train=no`, `use=reference`, and **Disallow**s GPTBot, ClaudeBot, Amazonbot, and other AI crawlers. The live site banner says they are overloaded by **AI bot traffic**. Owners have been IP-suspended for failing a “human test” after loading pages too fast (Bimmerfest, 2019; the same class of control is still in front of the site — we hit Cloudflare when we opened it).
+
+A script that walks every E46 diagram for `J32467` is the traffic they are blocking. The catalog content is BMW ETK data on someone else’s ad-supported site. BMW NA’s own terms also forbid robots on BMW NA sites; that is a different host, same industry rule: no unofficial bulk harvest.
+
+A **link** to a RealOEM diagram you already have open is a Citation. A **scraper** that fills our Catalog overnight is not “using RealOEM.” It is copying their site. We will not build that. The dealer ETK print for this VIN is the legitimate bulk path.
 
 ## Q26 in that light
 
