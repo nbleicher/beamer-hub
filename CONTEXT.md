@@ -65,8 +65,16 @@ A named place on the Vehicle the Owner can select (front-left door, trunk interi
 _Avoid_: Part, mesh, component, 3D click target
 
 **Query**:
-The text the Owner types to find a Region (and its aliases), such as “back left window” or “interior trunk left lightbulb.”
-_Avoid_: Search (as the domain object), Google, part lookup
+The text the Owner types to find a Region, an alias, or a Part.
+_Avoid_: Search (as the domain object), Google
+
+**Part**:
+A BMW part number that ETK says belongs on this Vehicle (and its current supersession). Not a name the Owner invented.
+_Avoid_: SKU, item, aftermarket listing, Region
+
+**Catalog**:
+The set of Parts for this Vehicle. A Query that is not in the Catalog is a miss, not a new Part.
+_Avoid_: Inventory, RealOEM (as if it were ours)
 
 **Check Sequence**:
 An ordered list of least-invasive Owner-doable checks for a Symptom or Region. Completing the sequence is not a finding that a part has failed.
