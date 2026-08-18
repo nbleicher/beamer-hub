@@ -34,8 +34,12 @@ _Avoid_: 60k service (as if mileage alone defined it)
 The Owner’s chronological record of Service Records for the Vehicle.
 _Avoid_: Service history (as a page title for Carfax), log, journal
 
+**Visit**:
+One session of work on one date, at one shop or by the Owner, that can contain many Service Records.
+_Avoid_: Appointment, invoice, RO
+
 **Service Record**:
-A dated entry the Owner accepts as true about the Vehicle, stamped with an Odometer Reading.
+One job inside a Visit (or a standalone observation), stamped with an Odometer Reading when known. Verbs: observed, checked, ordered, replaced. A Record imported from Evidence starts unverified until the Owner confirms or deletes it.
 _Avoid_: CARFAX line, work order, invoice (those may be Evidence)
 
 **Odometer Reading**:
@@ -50,11 +54,19 @@ _Avoid_: History (as if Evidence were the Ledger)
 
 **Symptom**:
 What the Owner notices (window dead, lamp out, leak, noise). Not a failed part.
-_Avoid_: Problem, issue, diagnosis
+_Avoid_: Issue, problem, diagnosis
+
+**Region**:
+A named place on the Vehicle the Owner can select on the 3D model (front-left door, trunk, engine bay). Not an ETK part number.
+_Avoid_: Part, mesh, component
 
 **Check Sequence**:
-An ordered list of Owner-doable checks for a Symptom or region. Each step may carry Citations and Suggestions. Completing the sequence is not a finding that a part has failed.
+An ordered list of least-invasive Owner-doable checks for a Symptom or Region. Completing the sequence is not a finding that a part has failed.
 _Avoid_: Diagnosis, procedure, repair, TIS job, ISTA test plan
+
+**Check Step**:
+One step in a Check Sequence: what to try, tools required, whether it is dangerous, and a stop question (lift, airbags, a tool the Owner does not have). May carry Citations, including tutorial videos.
+_Avoid_: Job, task, TIS step
 
 **Citation**:
 A pointer to a source a Suggestion rests on.
@@ -65,5 +77,5 @@ A ranked next check or hypothesis, offered with Citations. It is not a work orde
 _Avoid_: Recommendation (as a command), diagnosis, fix
 
 **Reminder**:
-A notice that an Engine Oil Service, Inspection, or Owner-set interval is within X miles or N days.
-_Avoid_: Alert, notification (as the domain object)
+An in-app banner that an Owner-set or recommended miles/months interval after the last matching Service Record is due or approaching.
+_Avoid_: Email alert, push notification, SMS
