@@ -39,8 +39,12 @@ One session of work on one date, at one shop or by the Owner, that can contain m
 _Avoid_: Appointment, invoice, RO
 
 **Service Record**:
-One job inside a Visit (or a standalone observation), stamped with an Odometer Reading when known. Verbs: observed, checked, ordered, replaced. A Record imported from Evidence starts unverified until the Owner confirms or deletes it.
+One job inside a Visit (or a standalone observation), stamped with an Odometer Reading when known. Verbs: observed, checked, ordered, replaced. Has one System and optional Region(s). A Record imported from Evidence starts unverified until the Owner confirms or deletes it.
 _Avoid_: CARFAX line, work order, invoice (those may be Evidence)
+
+**System**:
+The kind of maintenance a Service Record and a Reminder share (engine-oil, brake-fluid, coolant, cabin-filter).
+_Avoid_: Category, type, part
 
 **Odometer Reading**:
 Miles the Owner types from the cluster at the time of a Service Record or Reminder.
@@ -65,7 +69,7 @@ An ordered list of least-invasive Owner-doable checks for a Symptom or Region. C
 _Avoid_: Diagnosis, procedure, repair, TIS job, ISTA test plan
 
 **Check Step**:
-One step in a Check Sequence: what to try, tools required, whether it is dangerous, and a stop question (lift, airbags, a tool the Owner does not have). May carry Citations, including tutorial videos.
+One step in a Check Sequence: what to try, required Tools and Capabilities, whether it is dangerous, and a stop if the Crib says the Owner does not have what the step needs. May carry Citations. A YouTube search for the step returns Suggestions, not Citations.
 _Avoid_: Job, task, TIS step
 
 **Citation**:
@@ -77,5 +81,19 @@ A ranked next check or hypothesis, offered with Citations. It is not a work orde
 _Avoid_: Recommendation (as a command), diagnosis, fix
 
 **Reminder**:
-An in-app banner that an Owner-set or recommended miles/months interval after the last matching Service Record is due or approaching.
+An in-app banner that an Owner-set or recommended miles/months interval after the last matching Service Record (same System) is due or approaching.
 _Avoid_: Email alert, push notification, SMS
+
+## Crib
+
+**Tool**:
+A physical item a Check Step may require (socket, jack, multimeter).
+_Avoid_: Part, SKU
+
+**Capability**:
+A condition that is not a hand tool (lift, helper, level driveway).
+_Avoid_: Tool, skill
+
+**Crib**:
+The Owner’s list of recommended Tools and Capabilities, each marked has, does-not-have, or unconfirmed.
+_Avoid_: Inventory, garage, user tool list
